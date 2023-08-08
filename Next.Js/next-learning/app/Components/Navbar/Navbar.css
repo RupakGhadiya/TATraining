@@ -3,7 +3,7 @@
 /* seconsary colour #e6b2c6 */
 
 .nav{
-    width: 100%;
+    width: 100vw;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: flex;

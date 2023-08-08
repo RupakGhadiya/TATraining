@@ -1,0 +1,148 @@
+body {
+  font-family: "Open Sans", sans-serif, "SmytheSans";
+}
+
+div#root {
+  width: fit-content;
+}
+div.title {
+  margin: 20px 10px;
+  width: fit-content;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* to update styles of bars in bargraph */
+.bar {
+  /* width: 33px; */
+  /* fill: royalblue; */
+  /* stroke: royalblue; */
+  stroke-dasharray: 4px 2px;
+  cursor: pointer;
+  /* stroke-width: 1px; */
+}
+
+.grouped .bar:nth-child(-n + 5) {
+  fill: rgb(16, 139, 240);
+}
+.grouped .bar:nth-child(n + 4):nth-child(-n + 5) {
+  fill: rgb(247, 160, 84);
+}
+.grouped .bar:nth-child(n + 7):nth-child(-n + 5) {
+  fill: rgb(33, 179, 33);
+}
+.grouped .bar:nth-child(n):hover,
+.area:hover,
+path.dot:hover {
+  fill: rgb(255, 100, 100);
+  cursor: pointer;
+}
+.bar:hover {
+  fill: rgb(200, 200, 100);
+}
+
+/* style outer container of graph i.e. svg on which graph is made. */
+svg {
+  padding: 10px 15px 0px 10px;
+}
+path,
+line {
+  /* stroke-opacity: 0; */
+  stroke-width: 2px;
+  /* stroke: royalblue; */
+}
+
+.linechart path.line:nth-of-type(1) {
+  stroke: red;
+}
+.linechart path.line:nth-of-type(2) {
+  stroke: black;
+}
+.linechart path.line:nth-of-type(3) {
+  stroke: green;
+}
+
+text {
+  font-size: 12px;
+  /* fill: black; */
+  font-family: SmytheSans;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* h1 used outside svg */
+div.title > h1 {
+  font-family: "SmytheSans";
+  font-size: 14px;
+  margin-left: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #575756;
+}
+div.title {
+  position: relative;
+}
+p.FrontEnd,
+p.BackEnd,
+p.QA {
+  /* font-family: SmytheSans; */
+  display: inline;
+  position: absolute;
+  left: 450px;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #485465;
+}
+p.FrontEnd {
+  top: 0px;
+}
+p.BackEnd {
+  top: 20px;
+}
+p.QA {
+  top: 40px;
+}
+
+.dot-FrontEnd,
+.dot-BackEnd,
+.dot-QA {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  border-radius: 50%;
+}
+.dot-FrontEnd {
+  background-color: rgb(16, 139, 240);
+}
+.dot-QA {
+  background-color: rgb(247, 160, 84);
+}
+.dot-BackEnd {
+  background-color:rgb(174, 199, 232);
+}
+.brush .extent {
+  stroke: #000;
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+
+.brush .background {
+  fill: #ddd;
+}
+.LableBox{
+background-color: rgba(0, 0, 247, 0.244);
+}
